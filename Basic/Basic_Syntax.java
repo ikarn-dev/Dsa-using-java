@@ -90,7 +90,7 @@
 //    }
 //}
 
-6.  Java Program to Swap Two Numbers \[E]
+//6.  Java Program to Swap Two Numbers \[E]
 import java.util.Scanner;
 class Basic_Syntax {
     public static void main(String[] args) {
@@ -108,7 +108,7 @@ class Basic_Syntax {
     }
 }
 
-7.  Java Program to Check Whether a Number is Even or Odd \[E]
+//7.  Java Program to Check Whether a Number is Even or Odd \[E]
 import java.util.Scanner;
 class BasicSyntax{
     public static void main(String[] args) {
@@ -131,6 +131,13 @@ class BasicSyntax{
         Scanner sc = new Scanner(System.in);
         System.out.println("enter an alphabet: ");
         char alphabet = sc.next().charAt(0);
+        alphabet = Character.toLowerCase(alphabet);
 
+        if ("aeiou".indexOf(alphabet) == 0){
+            System.out.println("The alphabet is Vowel");
+        }
+        else {
+            System.out.println("The alphabet is Consonant");
+        }
     }
 }
